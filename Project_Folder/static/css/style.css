@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.bg-dark {
-    background-color: cornflowerblue;
+.bg-daark {
+    background-color: rgba(100, 148, 237, 0.622);
 }
 
 .mt-50 {

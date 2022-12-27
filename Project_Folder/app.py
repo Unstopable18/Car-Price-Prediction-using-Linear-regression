@@ -3,10 +3,10 @@ import pickle
 import pandas as pd
 import numpy as np
 
-
 app=Flask(__name__)
 model=pickle.load(open('LinearRegressionModel.pkl','rb'))
-car=pd.read_csv('Cleaned_Car_Dataset.csv')
+url="https://raw.githubusercontent.com/VDeshmukhCemtrex/Car-Price-Prediction-using-Linear-regression/37a2f35f9bc3d6134b7fca973badaa882f0cfe56/Cleaned_Car_Dataset.csv"
+car=pd.read_csv(url)
 
 @app.route('/')
 def index():
